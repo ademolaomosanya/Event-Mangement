@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -74,105 +75,114 @@
     padding-block: 2rem;
     width: min(95%, 1000rem);
     margin-inline: auto;
- 
+
   }
-  .facilities img{
+
+  .facilities img {
     width: 100%;
     background: rgba(41, 42, 46, 0.74);
     box-shadow: 0px 4px 50px rgba(70, 35, 210, 0.5);
   }
+
   @media screen and (max-width: 500px) {
-  .facilities-grid {
-    grid-template-columns: 1fr ;
+    .facilities-grid {
+      grid-template-columns: 1fr;
+    }
   }
-}
-.facilities p{
-  font: 1.5em sans-serif;
-  text-align: center;
-  font-weight: bold;
-}
-footer {
-   height: 40px;
-position: relative;
-background-color: rgb(34, 31, 31);
-text-align: center;
-  
-}
-footer p{
-  padding-top: 20px;
-  color: #ddd;
-}
+
+  .facilities a {
+    text-decoration: none;
+    font: 1.5em sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+  }
+
+  footer {
+    height: 40px;
+    position: relative;
+    background-color: rgb(34, 31, 31);
+    text-align: center;
+
+  }
+
+  footer p {
+    padding-top: 20px;
+    color: #ddd;
+  }
 </style>
 </head>
 
 <body>
 
-<div class="header">
-  <a href="#default" class="logo">DELUXE EVENT</a>
-  <div class="header-right">
-    <!-- <a class="active" href="#home">Home</a>
+  <div class="header">
+    <a href="#default" class="logo">DELUXE EVENT</a>
+    <div class="header-right">
+      <!-- <a class="active" href="#home">Home</a>
   <a href="#contact">Contact</a>
   <a href="#about">About</a> -->
 
-    <a href="homePage.html">Home</a>
-    <a href="#">Create An Event</a>
-    <a href="Facilities.html">Facilities</a>
-    <a href="signin.html">Sigin</a>
-    <a href="signup.html">Signup</a>
+      <a href="homePage.html">Home</a>
+      <a href="createEventPage.html">Create An Event</a>
+      <a href="Facilities.html">Facilities</a>
+      <a href="signin.html">Sigin</a>
+      <a href="signup.html">Signup</a>
+    </div>
   </div>
-</div>
 
-<main class="facilities-grid">
-  <article class="facilities">
-    <div>
-      <img src="images.jpg" alt="sometext" />
-      <p>Events Hall(250 capacity)</p>
-    </div>
-  </article>
 
-  <article class="facilities">
-    <div>
-      <img src="istockphoto-1151361779-170667a.jpg" alt="sometext"  />
-      <p>Hall(1000 capacity)</p>
-    </div>
-  </article>
+  <main class="facilities-grid">
+    <article class="facilities">
+      <div>
+        <a href="detailsPage.html"><img src="images.jpg" alt="sometext" /></a>
+        <a href="detailsPage.html">Events Hall(250 capacity)</a>
+      </div>
+    </article>
 
-  <article class="facilities">
-    <div>
-      <img src="download (2).jpg" alt="sometext" />
-      <p>Hall with projectors</p>
-    </div>
-  </article>
+    <article class="facilities">
+      <div>
+       <a href="detailsPage.html"> <img src="istockphoto-1151361779-170667a.jpg" alt="sometext" /></a>
+        <a href="detailsPage.html">Hall(1000 capacity)</a>
+      </div>
+    </article>
 
-  <article class="facilities">
-    <div>
-      <img src="download (3).jpg" alt="sometext" />
-      <p>Tents</p>
-    </div>
-  </article>
+    <article class="facilities">
+      <div>
+        <a href="detailsPage.html"><img src="download (2).jpg" alt="sometext" /></a>
+        <a href="detailsPage.html">Hall with projectors</a>
+      </div>
+    </article>
 
-  
-  <article class="facilities">
-    <div>
-      <img src="50474824_147695916242838_576054173647272351_n.jpg" alt="sometext" />
-      <p>Couple's Tents</p>
-    </div>
-  </article>
+    <article class="facilities">
+      <div>
+        <a href="detailsPage.html"> <img src="download (3).jpg" alt="sometext" /></a>
+        <a href="detailsPage.html">Tents</a>
+      </div>
+    </article>
 
-  <article class="facilities">
-    <div>
-      <img src="istockphoto-516590951-612x612.jpg" alt="sometext" />
-      <p>Festival Tents</p>
-    </div>
-  </article>
- 
-</main>
-<footer>
-  
-  <p>
-    DeluxeEvent Copyright &copy; 2022
-  </p>
- 
- </footer>
+
+    <article class="facilities">
+      <div>
+        <a href="detailsPage.html"><img src="50474824_147695916242838_576054173647272351_n.jpg" alt="sometext" /></a>
+        <a href="detailsPage.html">Couple's Tents</a>
+      </div>
+    </article>
+
+    <article class="facilities">
+      <div>
+        <a href="detailsPage.html"> <img src="istockphoto-516590951-612x612.jpg" alt="sometext" /></a>
+        <a href="detailsPage.html">Festival Tents</a>
+      </div>
+    </article>
+
+  </main>
+  <footer>
+
+    <p>
+      DeluxeEvent Copyright &copy; 2022
+    </p>
+
+  </footer>
 </body>
+
 </html>
