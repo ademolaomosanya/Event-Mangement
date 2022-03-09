@@ -16,23 +16,25 @@
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
     }
-header{
-    margin: 20px;
-font-size: 40px;
-color: rgb(250, 150, 186);
-font-weight: bolder;
-font-family: Arial, Helvetica, sans-serif;
-}
-h1{
-    text-align: center;
-    color:rgb(250, 150, 186);
-}
+
+    header {
+        margin: 20px;
+        font-size: 40px;
+        color: rgb(250, 150, 186);
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+        color: rgb(250, 150, 186);
+    }
 
 
-    .facilities-grid {
+    .facilities {
         display: grid;
         gap: 1.5rem;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         padding-block: 2rem;
         width: min(95%, 1000rem);
         margin-inline: auto;
@@ -41,12 +43,15 @@ h1{
 
     .facilities img {
         width: 100%;
-        /* background: rgba(41, 42, 46, 0.74); */
-        box-shadow: 0px 4px 50px rgba(41, 42, 46, 0.74);
+      
+  object-fit:contain;
+        
+        box-shadow: 0px 4px 5px rgba(41, 42, 46, 0.74);
+
     }
 
     @media screen and (max-width: 500px) {
-        .facilities-grid {
+        .facilities {
             grid-template-columns: 1fr;
         }
     }
@@ -99,23 +104,8 @@ h1{
         transition: 0.5s;
     }
 
-    .button span:after {
-        content: '\00bb';
-        position: absolute;
-        opacity: 0;
-        top: 0;
-        right: -20px;
-        transition: 0.5s;
-    }
-
-    .button:hover span {
-        padding-right: 25px;
-    }
-
-    .button:hover span:after {
-        opacity: 1;
-        right: 0;
-    }
+    
+    
 </style>
 </head>
 
@@ -127,11 +117,11 @@ h1{
     <h1>
         Book Your Event With Us Now
     </h1>
-    <main class="facilities-grid">
+    <main>
         <div>
             <article class="facilities">
                 <div>
-                    <img src="images.jpg" alt="sometext" />
+                    <img src="eventpics.jpg" alt="sometext" />
                     <p> Events Hall(250 capacity)</p>
                 </div>
                 <ul>
@@ -144,13 +134,14 @@ h1{
                     <li>
                         Opened Mon-Sun.
                     </li>
-                    <button class="button" style="vertical-align:middle"><span>Book Now </span></button>
+                    <a href="createEventPage.html"> <button class="button" ><span>Book Now
+                            </span></button></a>
 
                 </ul>
             </article>
         </div>
 
-        <article class="facilities">
+        <!-- <article class="facilities">
             <div>
                 <img src="istockphoto-1151361779-170667a.jpg" alt="sometext" />
                <p> Hall(1000 capacity)</p>
@@ -246,7 +237,7 @@ h1{
                 <button class="button" style="vertical-align:middle"><span>Book Now </span></button>
 
             </ul>
-        </article>
+        </article> -->
 
     </main>
     <footer>
